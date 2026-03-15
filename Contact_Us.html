@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            height: 300px;
+            width: 100%;
+        }
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid tomato;
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 1;
+        }
+        .form-section {
+            position: relative;
+            margin-top: 100px; /* Space for the info box */ 
+            background-color: #f9f9f9;
+            border: 1px solid tomato;
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 0;
+        }
+        h1 {
+            color: tomato;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid tomato;
+            border-radius: 4px;
+        }
+        button {
+            background-color: tomato;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <p>
+        <h2>Contact Us</h2>
+       <strong> Email </strong> 
+        <br>
+        codingal@xyz.com
+        <br>
+        <strong> Phone number </strong>
+        <br>
+        123-456-789
+        <br>
+       <strong> Location </strong> 
+        <br>
+        Building number 123, Bakers street, London 
+        <br>
+       <strong> Timings </strong>
+        <br>
+        8:00 A.M - 8:00 P.M
+        </p>
+    </div>
+    <div class="container">
+        <div class="info">
+            <p> Need to get in touch? Fill out the form below and we'll respond as soon as possible! </p>
+        </div>
+        <div class="form-section">
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">What can we help you with?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" onclick="myFunc ()">Submit</button>
+                <script>
+                    function myFunc() {
+                    location.replace ("contact-us.html")
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+    <button onclick=" myFunction ()" style="background-color: tomato;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    border:0px;
+    margin-left: 100px;margin-top: 50px;margin-bottom: 50px;"> Go back
+    </button>
+<script>
+function myFunction() {
+location.replace("Registeration form.html")
+}
+</script> 
+</body>
+</html>
